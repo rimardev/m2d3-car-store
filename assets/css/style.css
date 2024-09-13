@@ -5,7 +5,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*Vista mobile base*/
+/*---------------------- Vista mobile base*/
 .container {
   height: 100vh;
   display: grid;
@@ -71,7 +71,7 @@ main {
 /*-------------------------------- Pie pagina*/
 footer {
   grid-area: footer;
-  background-color: lightslategray;
+  background-color: rgb(102, 120, 138);
   color: white;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ footer {
 }
 
 /*:::::::::::::: Vista Tablet ::::::::::::*/
-@media (min-width: 576px) {
+@media screen and (min-width: 576px){
   .navbar-menu-icon i {
     display: none;
   }
@@ -92,4 +92,28 @@ footer {
   }
 }
 
-/**/
+/*:::::::::::::: Vista Desktop ::::::::::::*/
+@media screen and (min-width: 992px){
+  .container {
+    grid-template-areas: 
+    "header filtro"
+    "header main"
+    "footer main"
+    "footer pagina";
+    grid-template-rows: 30px 1fr 40px 30px;
+    grid-template-columns: 300px 1fr;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .navbar-logo {
+    padding: 15px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }  
+}
