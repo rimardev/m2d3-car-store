@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Vista mobile base*/
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "filtro"
+  "main"
+  "pagina"
+  "footer";
+  grid-template-rows: 70px 30px 1fr 30px 50px;
+}
+header {
+  background-color: lightslategray;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+}
+
+.filtro {  
+  padding: 5px;
+  background-color: rgb(200, 202, 204);
+  display: flex;
+  justify-content: center;
+}
+select {
+  padding: 0px 10px;
+  border-color: gray;
+  border-radius: 5px;  
+}
+
+.pagina {
+  text-align: center;
+}
+
+footer {
+  background-color: lightslategray;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
