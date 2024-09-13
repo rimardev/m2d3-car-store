@@ -20,6 +20,7 @@ body {
 
 /*----------------------------- Encabezado*/
 header {
+  grid-area: header;
   background-color: lightslategray;
   color: white;
   display: flex;
@@ -37,7 +38,8 @@ header {
 }
 
 /*---------------------------------- Filtro*/
-.filtro {  
+.filtro {
+  grid-area: filtro;
   padding: 5px;
   background-color: rgb(200, 202, 204);
   display: flex;
@@ -51,6 +53,7 @@ header {
 
 /*------------------------ Grilla de productos*/
 main {
+  grid-area: main;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +61,7 @@ main {
 
 /*-------------------------------- Paginado*/
 .pagina {
+  grid-area: pagina;
   background-color: rgb(200, 202, 204);
   display: flex;
   justify-content: center;
@@ -66,9 +70,26 @@ main {
 
 /*-------------------------------- Pie pagina*/
 footer {
+  grid-area: footer;
   background-color: lightslategray;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*:::::::::::::: Vista Tablet ::::::::::::*/
+@media (min-width: 576px) {
+  .navbar-menu-icon i {
+    display: none;
+  }
+  .navbar ul {
+    width: 50vw;
+    display: initial;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/**/
