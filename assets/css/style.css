@@ -17,38 +17,58 @@ body {
   "footer";
   grid-template-rows: 70px 30px 1fr 30px 50px;
 }
+
+/*----------------------------- Encabezado*/
 header {
   background-color: lightslategray;
   color: white;
-}
-
-ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-li {
+.navbar-logo {
+  padding: 0px 15px;
+}
+.navbar ul {
+  display: none;
+}
+.navbar li {
   list-style: none;
 }
 
+/*---------------------------------- Filtro*/
 .filtro {  
   padding: 5px;
   background-color: rgb(200, 202, 204);
   display: flex;
   justify-content: center;
 }
-select {
-  padding: 0px 10px;
+.filtro select {
+  padding: 0px 15px;
   border-color: gray;
   border-radius: 5px;  
 }
 
-.pagina {
-  text-align: center;
+/*------------------------ Grilla de productos*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*-------------------------------- Paginado*/
+.pagina {
+  background-color: rgb(200, 202, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------------------------- Pie pagina*/
 footer {
   background-color: lightslategray;
   color: white;
-  line-height: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
