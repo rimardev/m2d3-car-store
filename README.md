@@ -10,3 +10,12 @@ Este proyecto consiste en el desarrollo de una maqueta responsiva basica de un e
 - Desktop
 
 Partiendo de una estructura base para móviles, se asegura que el contenido sea accesible y fácil de navegar, ajustando automáticamente la disposición de elementos en pantallas más grandes (tablets y escritorios), garantizando una experiencia óptima en cualquier dispositivo.
+
+#### Vista Mobile
+![vistamobile](https://github.com/rimardev/m2d3-car-store/blob/main/assets/img/vista-mobile.jpg)
+
+#### Vista Tablet
+![vistatablet](https://github.com/rimardev/m2d3-car-store/blob/main/assets/img/vista-tablet.jpg)
+
+#### Vista Desktop
+![vistadesktop](https://github.com/rimardev/m2d3-car-store/blob/main/assets/img/vista-desktop.jpg)
